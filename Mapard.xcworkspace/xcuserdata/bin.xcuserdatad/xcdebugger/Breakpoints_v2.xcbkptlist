@@ -11,11 +11,11 @@
             condition = "propertyName==&quot;_latitude&quot;"
             continueAfterRunningActions = "No"
             filePath = "Mapard/Mapard.swift"
-            timestampString = "567671989.847991"
+            timestampString = "567678683.020847"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "mapForProperty(obj:dict:typeName:propertyName:)"
             landmarkType = "7">
          </BreakpointContent>

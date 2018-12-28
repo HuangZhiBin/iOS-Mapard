@@ -7,12 +7,14 @@
 //
 
 import UIKit
+
 private var arrayTypeNamesKey: Void?
+
 let SPACE_NAME = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String;
 /**
  ViewController的View的扩展方法
  */
-extension NSObject {
+extension BaseModel {
     
     var arrayTypeNames : [String : String]? {
         get {
@@ -27,11 +29,11 @@ extension NSObject {
         var propertyValue = dict[propertyName];
         
         
-        if(propertyName.hasPrefix("__")){
-            propertyValue = dict[propertyName.replacingOccurrences(of: "__", with: "")];
+        if(propertyName.hasPrefix(TMP_VAR_NAME_PREFIX)){
+            propertyValue = dict[propertyName.replacingOccurrences(of: TMP_VAR_NAME_PREFIX, with: "")];
         }
         
-        if propertyValue == nil {
+        if propertyValue == nil || propertyValue is NSNull {
             return;
         }
         
@@ -48,6 +50,17 @@ extension NSObject {
         else if(typeName == "NSDecimalNumber") {
             obj.setValue(propertyValue, forKey: propertyName);
         }
+        else if(typeName == "NSDate") {
+            let dateStr :String = propertyValue as! String;
+            if(dateStr.count == 10){
+                let date : Int = Int(dateStr)!;
+                obj.setValue(Date.init(timeIntervalSince1970: TimeInterval(date)), forKey: propertyName);
+            }
+            else if(dateStr.count == 13){
+                let date : Double = Double(dateStr)!/1000;
+                obj.setValue(Date.init(timeIntervalSince1970: TimeInterval(date)), forKey: propertyName);
+            }
+        }
         else if(typeName == "NSArray"){
             var array : [AnyObject] = [];
             
@@ -55,14 +68,10 @@ extension NSObject {
                 return;
             }
             
-//            let arrayType = type(of: arr)        // Array<Car>.Type
+//            obj.setValue([], forKey: propertyName);
+//            let arrayType : Array.Type = type(of: obj.value(forKey: propertyName) as! Array<Any>)
 //            let carType = arrayType.Element.self  // Car.Type
-//            print("arr type = "+String(describing: carType))           // "Car"
-            
-            obj.setValue([], forKey: propertyName);
-            let arrayType : Array.Type = type(of: obj.value(forKey: propertyName) as! Array<Any>)
-            let carType = arrayType.Element.self  // Car.Type
-            print("arr type = " + String(describing: carType))           // "Car"
+//            print("arr type = " + String(describing: carType))           // "Car"
             
             for arrItem in arr{
                 let modelDict : Dictionary<String,Any> = arrItem as! Dictionary<String, Any>;
@@ -129,7 +138,7 @@ extension NSObject {
         //获取类的属性列表,返回属性列表的数组,可选项
         
         let list = class_copyPropertyList(obj.classForCoder, &count)
-        print("属性个数:\(count)")
+        //print("属性个数:\(count)")
         //遍历数组
         for i in 0..<Int(count) {
             //根据下标获取属性
@@ -139,7 +148,7 @@ extension NSObject {
             let cName = property_getName(pty!)
             //转换成String的字符串
             let name = String(utf8String: cName)
-            //            print(name!);
+            //            //print(name!);
             properties.append(name!);
         }
         free(list) //释放list
@@ -152,7 +161,7 @@ extension NSObject {
         //获取类的属性列表,返回属性列表的数组,可选项
         
         let list = class_copyPropertyList(obj.classForCoder, &count)
-        print("属性个数:\(count)")
+        //print("属性个数:\(count)")
         //遍历数组
         for i in 0..<Int(count) {
             //根据下标获取属性
@@ -168,20 +177,20 @@ extension NSObject {
 //            let regex = try! NSRegularExpression(pattern: pattern, options: NSRegularExpression.Options(rawValue:0));
 //            let res = regex.matches(in: typeName!, options: NSRegularExpression.MatchingOptions(rawValue:0), range: NSMakeRange(0, (typeName?.count)!));
             
-            print(name);
+            //print(name);
             
             
 //            let range = res[res.count-1].range;
             let realTypeName = String((typeName as NSString).replacingOccurrences(of: "@", with: "").replacingOccurrences(of: "\"", with: ""));
-            print(realTypeName);
+            //print(realTypeName);
             properties[name] = realTypeName;
 //            properties[name!] = String(typeName!);
-//            print(properties[name]);
-            print("========");
-            
+//            //print(properties[name]);
+            //print("========");
+            /*
             var count2: UInt32 = 0
             let list2 = property_copyAttributeList(pty!, &count2)
-            print("属性个数:\(count2)")
+            //print("属性个数:\(count2)")
             //遍历数组
             for i in 0..<Int(count2) {
                 //根据下标获取属性
@@ -191,11 +200,12 @@ extension NSObject {
                 //NSLog(@"attribute name: %s, value: %s", name, value);
                 let name = String(utf8String: attribute.name);
                 let value = String(utf8String: attribute.value);
-                print(name);
-                print(value);
+                //print(name);
+                //print(value);
             }
             free(list2) //释放list
-            print(">>>>>>>");
+            //print(">>>>>>>");
+ */
         }
         free(list) //释放list
         return properties;

@@ -7,28 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3401FF8621D6182E00231E60 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3401FF8421D6182E00231E60 /* BaseModel.swift */; };
+		3401FF8721D6182E00231E60 /* Mapard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3401FF8521D6182E00231E60 /* Mapard.swift */; };
+		3401FF8C21D61BD300231E60 /* MapardConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3401FF8B21D61BD300231E60 /* MapardConfig.swift */; };
+		3401FF9121D61CB100231E60 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3401FF8E21D61CB100231E60 /* data.json */; };
+		3401FF9221D61CB100231E60 /* data2.json in Resources */ = {isa = PBXBuildFile; fileRef = 3401FF8F21D61CB100231E60 /* data2.json */; };
+		3401FF9321D61CB100231E60 /* data3.json in Resources */ = {isa = PBXBuildFile; fileRef = 3401FF9021D61CB100231E60 /* data3.json */; };
 		3478D58321D50AFB0040C3DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3478D58221D50AFB0040C3DB /* AppDelegate.swift */; };
 		3478D58521D50AFB0040C3DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3478D58421D50AFB0040C3DB /* ViewController.swift */; };
 		3478D58A21D50AFB0040C3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3478D58921D50AFB0040C3DB /* Assets.xcassets */; };
 		3478D58D21D50AFB0040C3DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3478D58B21D50AFB0040C3DB /* LaunchScreen.storyboard */; };
-		3478D59521D50B570040C3DB /* Mapard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3478D59421D50B570040C3DB /* Mapard.swift */; };
-		34F9CEE121D50F8C0024BDC0 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F9CEE021D50F8C0024BDC0 /* BaseModel.swift */; };
 		34F9CEE321D5147C0024BDC0 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F9CEE221D5147C0024BDC0 /* TestModel.swift */; };
-		34F9CEE521D5175E0024BDC0 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 34F9CEE421D5175E0024BDC0 /* data.json */; };
 		951C1A5F2C3EE1D2E7C798CF /* libPods-Mapard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C14D40176BF816646FB863B /* libPods-Mapard.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3401FF8421D6182E00231E60 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		3401FF8521D6182E00231E60 /* Mapard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapard.swift; sourceTree = "<group>"; };
+		3401FF8B21D61BD300231E60 /* MapardConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapardConfig.swift; sourceTree = "<group>"; };
+		3401FF8E21D61CB100231E60 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		3401FF8F21D61CB100231E60 /* data2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data2.json; sourceTree = "<group>"; };
+		3401FF9021D61CB100231E60 /* data3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data3.json; sourceTree = "<group>"; };
 		3478D57F21D50AFB0040C3DB /* Mapard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3478D58221D50AFB0040C3DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3478D58421D50AFB0040C3DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3478D58921D50AFB0040C3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3478D58C21D50AFB0040C3DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3478D58E21D50AFB0040C3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3478D59421D50B570040C3DB /* Mapard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapard.swift; sourceTree = "<group>"; };
-		34F9CEE021D50F8C0024BDC0 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		34F9CEE221D5147C0024BDC0 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
-		34F9CEE421D5175E0024BDC0 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		34F9CEE621D51E950024BDC0 /* Mapard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mapard-Bridging-Header.h"; sourceTree = "<group>"; };
 		59B7F0FC8F76D242A3F39DAE /* Pods-Mapard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mapard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mapard/Pods-Mapard.debug.xcconfig"; sourceTree = "<group>"; };
 		9C14D40176BF816646FB863B /* libPods-Mapard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mapard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +61,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3401FF8321D6182E00231E60 /* Mapard */ = {
+			isa = PBXGroup;
+			children = (
+				3401FF8421D6182E00231E60 /* BaseModel.swift */,
+				3401FF8521D6182E00231E60 /* Mapard.swift */,
+				3401FF8B21D61BD300231E60 /* MapardConfig.swift */,
+			);
+			path = Mapard;
+			sourceTree = "<group>";
+		};
+		3401FF8D21D61CB100231E60 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				3401FF8E21D61CB100231E60 /* data.json */,
+				3401FF8F21D61CB100231E60 /* data2.json */,
+				3401FF9021D61CB100231E60 /* data3.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
 		3478D57621D50AFB0040C3DB = {
 			isa = PBXGroup;
 			children = (
@@ -76,15 +102,14 @@
 		3478D58121D50AFB0040C3DB /* Mapard */ = {
 			isa = PBXGroup;
 			children = (
-				34F9CEE021D50F8C0024BDC0 /* BaseModel.swift */,
+				3401FF8321D6182E00231E60 /* Mapard */,
+				3401FF8D21D61CB100231E60 /* Json */,
 				34F9CEE221D5147C0024BDC0 /* TestModel.swift */,
-				3478D59421D50B570040C3DB /* Mapard.swift */,
 				3478D58221D50AFB0040C3DB /* AppDelegate.swift */,
 				3478D58421D50AFB0040C3DB /* ViewController.swift */,
 				3478D58921D50AFB0040C3DB /* Assets.xcassets */,
 				3478D58B21D50AFB0040C3DB /* LaunchScreen.storyboard */,
 				3478D58E21D50AFB0040C3DB /* Info.plist */,
-				34F9CEE421D5175E0024BDC0 /* data.json */,
 				34F9CEE621D51E950024BDC0 /* Mapard-Bridging-Header.h */,
 			);
 			path = Mapard;
@@ -163,7 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3478D58D21D50AFB0040C3DB /* LaunchScreen.storyboard in Resources */,
-				34F9CEE521D5175E0024BDC0 /* data.json in Resources */,
+				3401FF9121D61CB100231E60 /* data.json in Resources */,
+				3401FF9221D61CB100231E60 /* data2.json in Resources */,
+				3401FF9321D61CB100231E60 /* data3.json in Resources */,
 				3478D58A21D50AFB0040C3DB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,11 +250,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3401FF8C21D61BD300231E60 /* MapardConfig.swift in Sources */,
 				3478D58521D50AFB0040C3DB /* ViewController.swift in Sources */,
+				3401FF8721D6182E00231E60 /* Mapard.swift in Sources */,
 				3478D58321D50AFB0040C3DB /* AppDelegate.swift in Sources */,
+				3401FF8621D6182E00231E60 /* BaseModel.swift in Sources */,
 				34F9CEE321D5147C0024BDC0 /* TestModel.swift in Sources */,
-				34F9CEE121D50F8C0024BDC0 /* BaseModel.swift in Sources */,
-				3478D59521D50B570040C3DB /* Mapard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
