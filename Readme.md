@@ -1,5 +1,5 @@
 # Mapard
-### 将Dictionary转为Model的iOS工具. 
+### 将Dictionary转为Model的iOS工具
 
 网络请求中很多返回数据都是Dictionary的格式，提供Dictionary转为Model的工具，将省去写mapper的时间，让开发更高效。
 
@@ -42,8 +42,7 @@ class TestModel: BaseModel {
 ------------
 
 ### 关于@objc不支持Int/Float/Double/Bool的情况
-当model的属性不支持objc时,如Int/Float/Double/Bool，将转化失败（KVO）。在考虑新增变量的基础上，可借助辅助变量__latitude支持objc，并设置原变量的getter和setter，变量名前缀'___'须与Mapard的TMP_VAR_NAME_PREFIX定义的值一致；如不增加辅助变量，则需要把Int/Float/Double/Bool类型定义为objc支持的类型，比如NSNumber类型
-下面以latitude(维度，值为Double):
+当model的属性不支持objc时,如变量是Int/Float/Double/Bool时，将无法成功转化（KVO）。<br>在考虑新增变量的基础上，可借助辅助变量支持objc，并设置原变量的getter和setter。变量名前缀(例如'___')须与Mapard的TMP_VAR_NAME_PREFIX定义的值一致；如不增加辅助变量，则需要把Int/Float/Double/Bool类型定义为objc支持的类型，比如NSNumber类型。<br>下面以latitude(维度，值为Double):
 ```swift
     @objc var ___latitude : NSNumber?; // 辅助变量
     var latitude : Double?{
@@ -59,11 +58,12 @@ class TestModel: BaseModel {
 ```
 
 ### 扩展
-分析一下实际业务应用时可能遇到的情况。（具体参考/Ausbin/Controllers/Main）
+分析一下实际业务应用时可能遇到的情况。
 - 1.&nbsp;Mapard的测试案例分为三种，data.json、data2.json、data3.json(参考文件夹/Mapard/Json/),针对不同的数据情况进行测试
 - 2.&nbsp;Mapard当前支持的json变量涵盖大部分的常用类型，包括int/string/boolean/date/double/等类型
-- 3.&nbsp;Mapard兼顾数组为空数组、为nil的情况
-- 4.&nbsp;Mapard兼顾变量不存在，以及变量值为nil的情况
+- 3.&nbsp;Mapard兼容model互相嵌套的情况
+- 4.&nbsp;Mapard兼容数组为空数组、为nil的情况
+- 5.&nbsp;Mapard兼容变量不存在，以及变量值为nil的情况
 
 ### 讨论
 项目还存在以下的问题，欢迎批评指正：
