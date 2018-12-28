@@ -61,7 +61,7 @@ class TestModel: BaseModel {
 分析一下实际业务应用时可能遇到的情况。
 - 1.&nbsp;Mapard的测试案例分为三种，data.json、data2.json、data3.json(参考文件夹/Mapard/Json/),针对不同的数据情况进行测试
 - 2.&nbsp;Mapard当前支持的json变量涵盖大部分的常用类型，包括int/string/boolean/date/double/等类型
-- 3.&nbsp;Mapard兼容model互相嵌套的情况
+- 3.&nbsp;Mapard兼容**model互相嵌套**的情况
 - 4.&nbsp;Mapard兼容数组为空数组、为nil的情况
 - 5.&nbsp;Mapard兼容变量不存在，以及变量值为nil的情况
 
