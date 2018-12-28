@@ -23,22 +23,10 @@
 // [Mapard] 1. Model类必须继承BaseModel,如已有原AbcBaseModel,使AbcBaseModel继承BaseModel
 class TestModel: BaseModel {
     @objc var title : String?;// [Mapard] 2. 属性必须支持objc，否则转化失败
-    @objc var time : Date?;
-    @objc var data : DataModel?;
-    
-    required init(coder aDecoder: NSCoder?) {
-        super.init(coder: nil);
-    }
-}
-
-class DataModel: BaseModel {
     @objc var cities : [CityModel]?; // [Mapard] 3. 必须为数组变量定义其类型，代码如下
-    @objc var info : String?;
-    @objc var type : NSNumber?;
-    
     required init(coder aDecoder: NSCoder?) {
         super.init(coder: nil);
-        // [Mapard]  为数组变量定义其类型,key为数组的变量名,value为数组元素的类名
+        // 为数组变量定义其类型,key为数组的变量名,value为数组元素的类名
         self.arrayTypeNames = ["cities":"CityModel"];
     }
 }
