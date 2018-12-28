@@ -41,7 +41,7 @@ class TestModel: BaseModel {
 ![](http://wxtopik.oss-cn-shanghai.aliyuncs.com/app/images/1545990189420.gif)
 ------------
 
-### 
+### 关于@objc不支持Int/Float/Double/Bool的情况
 当model的属性不支持objc时,如Int/Float/Double/Bool，将转化失败（KVO）。在考虑新增变量的基础上，可借助辅助变量__latitude支持objc，并设置原变量的getter和setter，变量名前缀'___'须与Mapard的TMP_VAR_NAME_PREFIX定义的值一致；如不增加辅助变量，则需要把Int/Float/Double/Bool类型定义为objc支持的类型，比如NSNumber类型
 下面以latitude(维度，值为Double):
 ```swift
