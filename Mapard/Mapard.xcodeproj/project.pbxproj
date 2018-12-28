@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3478D58321D50AFB0040C3DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3478D58221D50AFB0040C3DB /* AppDelegate.swift */; };
+		3478D58521D50AFB0040C3DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3478D58421D50AFB0040C3DB /* ViewController.swift */; };
+		3478D58A21D50AFB0040C3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3478D58921D50AFB0040C3DB /* Assets.xcassets */; };
+		3478D58D21D50AFB0040C3DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3478D58B21D50AFB0040C3DB /* LaunchScreen.storyboard */; };
+		3478D59521D50B570040C3DB /* Mapard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3478D59421D50B570040C3DB /* Mapard.swift */; };
+		34F9CEE121D50F8C0024BDC0 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F9CEE021D50F8C0024BDC0 /* BaseModel.swift */; };
+		34F9CEE321D5147C0024BDC0 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F9CEE221D5147C0024BDC0 /* TestModel.swift */; };
+		34F9CEE521D5175E0024BDC0 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 34F9CEE421D5175E0024BDC0 /* data.json */; };
+		951C1A5F2C3EE1D2E7C798CF /* libPods-Mapard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C14D40176BF816646FB863B /* libPods-Mapard.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3478D57F21D50AFB0040C3DB /* Mapard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3478D58221D50AFB0040C3DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3478D58421D50AFB0040C3DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3478D58921D50AFB0040C3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3478D58C21D50AFB0040C3DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3478D58E21D50AFB0040C3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3478D59421D50B570040C3DB /* Mapard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapard.swift; sourceTree = "<group>"; };
+		34F9CEE021D50F8C0024BDC0 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		34F9CEE221D5147C0024BDC0 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		34F9CEE421D5175E0024BDC0 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		34F9CEE621D51E950024BDC0 /* Mapard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mapard-Bridging-Header.h"; sourceTree = "<group>"; };
+		59B7F0FC8F76D242A3F39DAE /* Pods-Mapard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mapard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mapard/Pods-Mapard.debug.xcconfig"; sourceTree = "<group>"; };
+		9C14D40176BF816646FB863B /* libPods-Mapard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mapard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B938EE079EFA3BE3B43BAF3D /* Pods-Mapard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mapard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mapard/Pods-Mapard.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3478D57C21D50AFB0040C3DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951C1A5F2C3EE1D2E7C798CF /* libPods-Mapard.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0081565712C91829ABFB6CA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C14D40176BF816646FB863B /* libPods-Mapard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3478D57621D50AFB0040C3DB = {
+			isa = PBXGroup;
+			children = (
+				3478D58121D50AFB0040C3DB /* Mapard */,
+				3478D58021D50AFB0040C3DB /* Products */,
+				73C7394734CEC6C6A31EF90E /* Pods */,
+				0081565712C91829ABFB6CA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3478D58021D50AFB0040C3DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3478D57F21D50AFB0040C3DB /* Mapard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3478D58121D50AFB0040C3DB /* Mapard */ = {
+			isa = PBXGroup;
+			children = (
+				34F9CEE021D50F8C0024BDC0 /* BaseModel.swift */,
+				34F9CEE221D5147C0024BDC0 /* TestModel.swift */,
+				3478D59421D50B570040C3DB /* Mapard.swift */,
+				3478D58221D50AFB0040C3DB /* AppDelegate.swift */,
+				3478D58421D50AFB0040C3DB /* ViewController.swift */,
+				3478D58921D50AFB0040C3DB /* Assets.xcassets */,
+				3478D58B21D50AFB0040C3DB /* LaunchScreen.storyboard */,
+				3478D58E21D50AFB0040C3DB /* Info.plist */,
+				34F9CEE421D5175E0024BDC0 /* data.json */,
+				34F9CEE621D51E950024BDC0 /* Mapard-Bridging-Header.h */,
+			);
+			path = Mapard;
+			sourceTree = "<group>";
+		};
+		73C7394734CEC6C6A31EF90E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59B7F0FC8F76D242A3F39DAE /* Pods-Mapard.debug.xcconfig */,
+				B938EE079EFA3BE3B43BAF3D /* Pods-Mapard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3478D57E21D50AFB0040C3DB /* Mapard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3478D59121D50AFB0040C3DB /* Build configuration list for PBXNativeTarget "Mapard" */;
+			buildPhases = (
+				D7139F9954FA195E4003B0C2 /* [CP] Check Pods Manifest.lock */,
+				3478D57B21D50AFB0040C3DB /* Sources */,
+				3478D57C21D50AFB0040C3DB /* Frameworks */,
+				3478D57D21D50AFB0040C3DB /* Resources */,
+				64DD430579EE8EB6B9908288 /* [CP] Embed Pods Frameworks */,
+				B692B922A201AB9BDA8E44A9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mapard;
+			productName = Mapard;
+			productReference = 3478D57F21D50AFB0040C3DB /* Mapard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3478D57721D50AFB0040C3DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = BinHuang;
+				TargetAttributes = {
+					3478D57E21D50AFB0040C3DB = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3478D57A21D50AFB0040C3DB /* Build configuration list for PBXProject "Mapard" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3478D57621D50AFB0040C3DB;
+			productRefGroup = 3478D58021D50AFB0040C3DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3478D57E21D50AFB0040C3DB /* Mapard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3478D57D21D50AFB0040C3DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3478D58D21D50AFB0040C3DB /* LaunchScreen.storyboard in Resources */,
+				34F9CEE521D5175E0024BDC0 /* data.json in Resources */,
+				3478D58A21D50AFB0040C3DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64DD430579EE8EB6B9908288 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mapard/Pods-Mapard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B692B922A201AB9BDA8E44A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mapard/Pods-Mapard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7139F9954FA195E4003B0C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3478D57B21D50AFB0040C3DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3478D58521D50AFB0040C3DB /* ViewController.swift in Sources */,
+				3478D58321D50AFB0040C3DB /* AppDelegate.swift in Sources */,
+				34F9CEE321D5147C0024BDC0 /* TestModel.swift in Sources */,
+				34F9CEE121D50F8C0024BDC0 /* BaseModel.swift in Sources */,
+				3478D59521D50B570040C3DB /* Mapard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3478D58B21D50AFB0040C3DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3478D58C21D50AFB0040C3DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3478D58F21D50AFB0040C3DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3478D59021D50AFB0040C3DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3478D59221D50AFB0040C3DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B7F0FC8F76D242A3F39DAE /* Pods-Mapard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32YMLWPCBK;
+				INFOPLIST_FILE = Mapard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techtcm.acup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Mapard/Mapard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3478D59321D50AFB0040C3DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B938EE079EFA3BE3B43BAF3D /* Pods-Mapard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32YMLWPCBK;
+				INFOPLIST_FILE = Mapard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.techtcm.acup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Mapard/Mapard-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3478D57A21D50AFB0040C3DB /* Build configuration list for PBXProject "Mapard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3478D58F21D50AFB0040C3DB /* Debug */,
+				3478D59021D50AFB0040C3DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3478D59121D50AFB0040C3DB /* Build configuration list for PBXNativeTarget "Mapard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3478D59221D50AFB0040C3DB /* Debug */,
+				3478D59321D50AFB0040C3DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3478D57721D50AFB0040C3DB /* Project object */;
+}

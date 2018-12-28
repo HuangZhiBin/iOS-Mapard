@@ -1,0 +1,33 @@
+{
+    "data": {
+        "cities": [
+            {
+                "id": 1,
+                "name": "北京市",
+                "latitude": 116.24000000,
+                "longitude": 39.55000000,
+                "population": 1234456231,
+                "isHot": true
+            },
+            {
+                "id": 2,
+                "name": "上海市",
+                "latitude": 121.29000000,
+                "longitude": 31.14000000,
+                "population": 309456232,
+                "isHot": false
+            },
+            {
+                "id": 3,
+                "name": "天津市",
+                "latitude": 117.12000000,
+                "longitude": 39.02000000,
+                "population": 8904456233,
+                "isHot": true
+            }
+        ],
+        "info": "这是三个城市",
+        "type" : 3
+    },
+    "time": "2019年1月1日"
+}
