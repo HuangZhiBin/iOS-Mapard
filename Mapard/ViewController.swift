@@ -96,16 +96,16 @@ class ViewController: UIViewController {
             
         }, success: {(task : URLSessionDataTask, responseObj : Any?) -> Void in
             
-            let responseDict = responseObj as! Dictionary<String, Any>;
-            let test : TestModel = TestModel.init(coder: nil);
+            let dict = responseObj as! Dictionary<String, Any>;
+            let testModel : TestModel = TestModel.init(coder: nil);
             /*
                 [Mapard] model初始化之后调用转化方法，转化之前记得遵循model的编写规则：
                     1. Model类必须继承BaseModel,如已有原AbcBaseModel,使AbcBaseModel继承BaseModel
                     2. Model类的所有属性必须支持@objc，否则转化失败
                     3. Model类的数组变量必须为其定义其类型
             */
-            test.modelFrom(dataDict: responseDict);
-            self.printModel(model: test);
+            testModel.modelFrom(dataDict: dict);
+            self.printModel(model: testModel);
         }, failure: {(task : URLSessionDataTask?, error: Error) -> Void in
             
         });

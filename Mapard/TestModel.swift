@@ -20,13 +20,13 @@ class TestModel: BaseModel {
 }
 
 class DataModel: BaseModel {
-    @objc var cities : [CityModel]?; // 必须为数组变量定义其类型，代码如下
+    @objc var cities : [CityModel]?; // [Mapard] 必须为数组变量定义其类型，代码如下
     @objc var info : String?;
     @objc var type : NSNumber?;
     
     required init(coder aDecoder: NSCoder?) {
         super.init(coder: nil);
-        // [Mapard] 为数组变量定义其类型
+        // [Mapard]  为数组变量定义其类型
         self.arrayTypeNames = ["cities":"CityModel"];
     }
 }
