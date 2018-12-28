@@ -1,9 +1,9 @@
 # Mapard
-### Mapard : 将Dictionary转为Model的iOS工具. 
+### 将Dictionary转为Model的iOS工具. 
 
 网络请求中很多返回数据都是Dictionary的格式，提供Dictionary转为Model的工具，将省去写mapper的时间，让开发更高效。
 
-> Mapard is an iOS Utility that convert Dictionary to Model.
+> Mapard is an iOS Utility that converts Dictionary to Model.
 
 ![](http://wxtopik.oss-cn-shanghai.aliyuncs.com/app/images/1545988181497.jpg)
 
@@ -38,7 +38,7 @@ class DataModel: BaseModel {
     
     required init(coder aDecoder: NSCoder?) {
         super.init(coder: nil);
-        // [Mapard]  为数组变量定义其类型
+        // [Mapard]  为数组变量定义其类型,key为数组的变量名,value为数组元素的类名
         self.arrayTypeNames = ["cities":"CityModel"];
     }
 }
@@ -50,7 +50,7 @@ class DataModel: BaseModel {
 ```
 
 ##### 最终效果
-![](http://wxtopik.oss-cn-shanghai.aliyuncs.com/app/images/1545989695985.gif)
+![](http://wxtopik.oss-cn-shanghai.aliyuncs.com/app/images/1545990189420.gif)
 ------------
 
 ### 
