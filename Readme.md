@@ -1,4 +1,5 @@
 # Mapard
+代码不再更新，最新代码请参考https://github.com/HuangZhiBin/Mapard
 ### 将Dictionary转为Model的iOS工具
 
 网络请求中很多返回数据都是Dictionary的格式，提供Dictionary转为Model的工具，将省去写mapper的时间，让开发更高效。
